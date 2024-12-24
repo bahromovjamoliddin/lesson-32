@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ozimni kodim</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="main">
+    <h1 class="main__title">
+        Vue ToDo List
+    </h1>
+    <div class="todo">
+        <div class="todo__header">
+            <div>Tasks <span>0</span></div>
+            <div>Tasks Done <span>0</span></div>
+            <button class="btn btn-error" onclick="deleteTodo(event)">Delete</button>
+        </div>
+                <div class="todo__list">
+            <p class="absent-text active">
+                Your task list is empty
+            </p>
+        </div>
+       
+        <div class="todo__buttom">
+            <input type="text" name="title" placeholder="New task" id="todo-title">
+            <button type="button" onclick="pushTodo()">+</button>
+        </div> 
+    </div>
+</div>
+
+</body>
+<script src="./main.js"></script>
+</html>
